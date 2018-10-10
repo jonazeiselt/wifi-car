@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:minHeight="500dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Sign up"
+            android:id="@+id/signupTV"
+            android:textColor="@color/material_deep_teal_200"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/cancelBtn"
+            android:layout_gravity="center_horizontal"
+            android:width="150dp"
+            android:onClick="cancel"
+            android:layout_below="@+id/passAgainET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp"
+            android:textColor="@android:color/white"
+            android:background="@color/material_deep_teal_200" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:id="@+id/createBtn"
+            android:width="150dp"
+            android:onClick="createUser"
+            android:layout_alignTop="@+id/cancelBtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:background="@color/material_deep_teal_200" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameET"
+            android:singleLine="true"
+            android:hint="Enter username"
+            android:fontFamily="sans-serif"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:layout_above="@+id/passwordET"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordET"
+            android:singleLine="true"
+            android:hint="Enter password"
+            android:fontFamily="sans-serif"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@android:drawable/ic_lock_lock" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passAgainET"
+            android:singleLine="true"
+            android:hint="Re-enter password"
+            android:fontFamily="sans-serif"
+            android:layout_below="@+id/passwordET"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@android:drawable/ic_lock_lock" />
+
+    </RelativeLayout>
+
+</LinearLayout>
